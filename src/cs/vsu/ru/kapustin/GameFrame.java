@@ -13,7 +13,7 @@ import java.util.HashMap;
 public class GameFrame extends JFrame {
     private JTable gameTable;
     private JPanel gamePanel;
-    int CELL_SIZE = 140;
+    private final int CELL_SIZE = 140;
 
     private final HashMap<Integer, Color> colorMap = new HashMap<>() {{
         put(0, new Color(191, 177, 160));
