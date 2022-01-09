@@ -32,7 +32,7 @@ public class GameFrame extends JFrame {
         put(16384, new Color(52, 159, 106));
         put(32768, new Color(0, 151, 255));
         put(65536, new Color(56, 65, 255));
-        put(131072, new Color(176, 0, 176)); //max value for field 4x4
+        put(131072, new Color(176, 0, 176)); 
     }};
 
     private final Game game = new Game();
