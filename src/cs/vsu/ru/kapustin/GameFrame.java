@@ -115,8 +115,6 @@ public class GameFrame extends JFrame {
     }
 
     private void paintTile(int row, int column, Graphics2D g2d, int tileWidth, int tileHeight, int[][] arr) {
-        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-
         Color color = colorMap.get(arr[row][column]);
 
         int tileSize = Math.min(tileWidth, tileHeight);
