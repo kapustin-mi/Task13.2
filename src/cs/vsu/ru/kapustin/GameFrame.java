@@ -115,14 +115,13 @@ public class GameFrame extends JFrame {
 
     private void paintTile(int row, int column, Graphics2D g2d, int tileWidth, int tileHeight, int[][] arr) {
         Color color = colorMap.get(arr[row][column]);
-
-        int tileSize = Math.min(tileWidth, tileHeight);
-        int bound = (int) Math.round(tileSize * 0.1) / 2;
+        
+        int bound = (int) Math.round(tileWidth * 0.1) / 2;
 
         g2d.setColor(color);
-        g2d.fillRect(bound, bound, tileSize - 2 * bound, tileSize - 2 * bound);
+        g2d.fillRect(bound, bound, tileWidth - 2 * bound, tileHeight - 2 * bound);
         g2d.setColor(Color.BLACK);
-        g2d.drawRect(bound, bound, tileSize - 2 * bound, tileSize - 2 * bound);
+        g2d.drawRect(bound, bound, tileWidth - 2 * bound, tileHeight - 2 * bound);
 
         int tileValue = arr[row][column];
         if (tileValue != 0) {
